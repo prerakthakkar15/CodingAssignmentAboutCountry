@@ -10,7 +10,7 @@ import UIKit
 
 
 //MARK: About Country Data Model
-struct AboutCountryItemArray:Decodable {
+struct AboutCountryResponseData:Decodable {
     var title : String?
     var rows: [AboutCountryItemObject]
 }

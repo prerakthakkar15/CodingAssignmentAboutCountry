@@ -10,11 +10,15 @@ import UIKit
 
 class AboutCountryViewController: UIViewController {
 
+    var instancAboutCountryVM : AboutCountryViewModel!
+      
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
    
+        self.instancAboutCountryVM = AboutCountryViewModel(instanceVC: self)
+        self.instancAboutCountryVM.loadAboutCanadaData()
     }
     
 

@@ -8,6 +8,16 @@
 
 import UIKit
 
-class AboutCountryDataModel: NSObject {
 
+//MARK: About Country Data Model
+struct AboutCountryItemArray:Decodable {
+    var title : String?
+    var rows: [AboutCountryItemObject]
 }
+
+struct AboutCountryItemObject : Decodable {
+    var title: String?
+    var description: String?
+    var imageHref: String?
+}
+
